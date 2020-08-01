@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const valuesRoutes_1 = __importDefault(require("./routes/valuesRoutes"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
@@ -23,8 +24,7 @@ class Server {
         //this.app.use(express.static(path.join(__dirname,'../dist/')));
     }
     routes() {
-        //this.app.use('/', indexRoutes);
-        this.app.use('/', express_1.default.static('../dist'));
+        this.app.use('/', indexRoutes_1.default);
         this.app.use('/api/values', valuesRoutes_1.default);
     }
     start() {
