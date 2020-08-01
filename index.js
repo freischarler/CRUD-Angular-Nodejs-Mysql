@@ -20,10 +20,8 @@ class Server {
         this.app.use(morgan_1.default('dev')); //para ver los GET POST en el npm
         this.app.use(cors_1.default());
         this.app.use(express_1.default.json()); //el servidor entiende el formato json
-        //this.app.use(express.static(__dirname + '/dist'));
-        //this.app.use(express.static(path.join(__dirname,'../dist/')));
+        this.app.use(express_1.default.urlencoded({ extended: false })); //para validar formularios en html
         this.app.use(express_1.default.static(__dirname + '/dist/client'));
-        //this.app.use('/public', express.static(path.join(__dirname, "public")));
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);
