@@ -4,7 +4,7 @@ exports.indexController = void 0;
 var path = require('path');
 class IndexController {
     index(req, res) {
-        res.sendFile(path.join(__dirname, './dist/index.html'));
+        res.sendFile(path.join(__dirname, '../dist/index.html'));
     }
 }
 exports.indexController = new IndexController();
