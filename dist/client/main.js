@@ -414,16 +414,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const API_URL = "https://iot-crud-angular-nodejs-mysql.herokuapp.com/api";
 class PlacesService {
-    //private valuesUrl = '/api/values';
-    constructor(httpClient) {
-        this.httpClient = httpClient;
-        //API_URI="https://localhost:3000/api"
-        this.REST_API_SERVER = "http://localhost:3000";
+    constructor(http) {
+        this.http = http;
     }
     getPlaces() {
         return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
-            return this.httpClient.get(this.REST_API_SERVER + '/api/values');
+            return this.http.get(API_URL + '/values');
         });
     }
 }
