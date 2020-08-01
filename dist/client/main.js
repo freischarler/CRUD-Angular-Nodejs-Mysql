@@ -415,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 class PlacesService {
     constructor(Http) {
         this.Http = Http;
-        this.API_URI = "https://iot-crud-angular-nodejs-mysql.herokuapp.com/api";
+        this.API_URI = "https://localhost:3000/api";
     }
     getPlaces() {
         return this.Http.get(`${this.API_URI}/values`);
