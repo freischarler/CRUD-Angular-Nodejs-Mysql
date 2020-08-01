@@ -21,7 +21,7 @@ class Server {
         this.app.use(cors_1.default());
         this.app.use(express_1.default.json()); //el servidor entiende el formato json
         //this.app.use(express.static(__dirname + '/dist'));
-        this.app.use(express_1.default.static(path.join(__dirname, 'dist/')));
+        this.app.use(express_1.default.static(path.join(__dirname, './dist/')));
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);
