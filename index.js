@@ -23,6 +23,7 @@ class Server {
         //this.app.use(express.static(__dirname + '/dist'));
         //this.app.use(express.static(path.join(__dirname,'../dist/')));
         this.app.use(express_1.default.static(__dirname + '../dist/client'));
+        //this.app.use('/public', express.static(path.join(__dirname, "public")));
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);
