@@ -8,7 +8,7 @@ const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const valuesRoutes_1 = __importDefault(require("./routes/valuesRoutes"));
 const morgan_1 = __importDefault(require("morgan"));
 const cors_1 = __importDefault(require("cors"));
-var path = require('path');
+//var path = require('path');
 class Server {
     constructor() {
         this.app = express_1.default();
