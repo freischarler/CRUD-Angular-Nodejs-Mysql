@@ -19,10 +19,11 @@ class Server {
         this.app.use(morgan_1.default('dev')); //para ver los GET POST en el npm
         this.app.use(cors_1.default());
         this.app.use(express_1.default.json()); //el servidor entiende el formato json
+        this.app.use(express_1.default.static(__dirname + '/dist'));
     }
     routes() {
         this.app.use('/', indexRoutes_1.default);
-        this.app.use('/values', valuesRoutes_1.default);
+        this.app.use('/api/values', valuesRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'));
