@@ -27,7 +27,7 @@ class ValuesController {
     getValue(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            database_1.default.query('select * from sensor where id = ?', [id], function (err, result, fields) {
+            database_1.default.query('select * from sensor where sensor_id = ?', [id], function (err, result, fields) {
                 if (err)
                     throw err;
                 res.json(result);
