@@ -11,7 +11,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n", "",{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,8EAA8E","file":"styles.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\n"]}]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.main-container{\n    margin-top: 20px;\n}\nbody{\n    padding-bottom: 50px;\n}", "",{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,8EAA8E;AAC9E;IACI,gBAAgB;AACpB;AAEA;IACI,oBAAoB;AACxB","file":"styles.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\n.main-container{\n    margin-top: 20px;\n}\n\nbody{\n    padding-bottom: 50px;\n}"]}]);
 // Exports
 module.exports = exports;
 
