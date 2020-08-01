@@ -1,3 +1,4 @@
-# Nodejs-mysql
+# Angular-Nodejs-mysql
 
-Base de datos mysql con nodejs para heroku
+CRUD subido a heroku: https://iot-crud-angular-nodejs-mysql.herokuapp.com/
+
