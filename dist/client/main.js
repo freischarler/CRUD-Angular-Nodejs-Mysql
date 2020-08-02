@@ -262,6 +262,7 @@ class PlacesComponent {
         this._placesService = _placesService;
     }
     ngOnInit() {
+        this._placesService.getPlaces().then(res => console.log(res), err => console.log(err));
     }
 }
 PlacesComponent.ɵfac = function PlacesComponent_Factory(t) { return new (t || PlacesComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_places_service__WEBPACK_IMPORTED_MODULE_1__["PlacesService"])); };
