@@ -4,19 +4,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const valuesController_1 = __importDefault(require("../controllers/valuesController"));
-class valuesRoutes {
+const placesController_1 = __importDefault(require("../controllers/placesController"));
+class placesRoutes {
     constructor() {
         this.router = express_1.Router();
         this.config();
     }
     config() {
-        this.router.get('/', valuesController_1.default.list);
-        this.router.get('/:id', valuesController_1.default.getValue);
-        this.router.post('/', valuesController_1.default.create); //insertamos lugares
-        this.router.delete('/:id', valuesController_1.default.delete);
-        this.router.put('/:id', valuesController_1.default.update);
+        this.router.get('/', placesController_1.default.list);
+        this.router.get('/:id', placesController_1.default.getValue);
+        this.router.post('/', placesController_1.default.create); //insertamos lugares
+        this.router.delete('/:id', placesController_1.default.delete);
+        this.router.put('/:id', placesController_1.default.update);
     }
 }
-const valuesRouters = new valuesRoutes();
+const valuesRouters = new placesRoutes();
 exports.default = valuesRouters.router;
